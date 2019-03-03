@@ -1,0 +1,5 @@
+install.packages("testthat")
+library(testthat)
+setwd("~/Desktop/repos/r/RTest")
+source("fibo.R")
+test_results <- test_dir(".", reporter="summary")
